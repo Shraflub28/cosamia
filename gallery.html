@@ -1,0 +1,256 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Gallery | Cosamia Snack</title>
+    <link rel="stylesheet" href="css/styles.css">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;500;600;700;800&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css">
+    <style>
+        .disclaimer-banner {
+            background-color: #e91e1e;
+            color: white;
+            text-align: center;
+            padding: 10px 15px;
+            font-weight: 500;
+            position: fixed;
+            top: 0;
+            left: 0;
+            right: 0;
+            z-index: 1000;
+            box-shadow: 0 2px 5px rgba(0,0,0,0.2);
+        }
+        .disclaimer-banner a {
+            color: white;
+            text-decoration: underline;
+        }
+        header {
+            margin-top: 40px;
+        }
+        .gallery-page-header {
+            margin-top: 116px !important;
+        }
+        @media screen and (max-width: 768px) {
+            .disclaimer-banner {
+                font-size: 14px;
+                padding: 8px 10px;
+            }
+            header {
+                margin-top: 36px;
+            }
+            .gallery-page-header {
+                margin-top: 112px !important;
+            }
+        }
+        
+        .gallery-page-header {
+            height: 40vh;
+            min-height: 300px;
+            background-color: rgba(0, 0, 0, 0.8);
+            background-image: url('assets/images/placeholder/gallery-header.jpg');
+            background-size: cover;
+            background-position: center;
+            background-blend-mode: overlay;
+            display: flex;
+            align-items: center;
+            justify-content: center;
+            text-align: center;
+            margin-top: 76px;
+        }
+        
+        .gallery-page-title {
+            font-size: 3.5rem;
+            color: var(--accent-gold);
+            text-transform: uppercase;
+            text-shadow: 2px 2px 4px rgba(0, 0, 0, 0.5);
+        }
+        
+        .gallery-container {
+            padding: 60px 0;
+        }
+        
+        .gallery-filter {
+            display: flex;
+            justify-content: center;
+            margin-bottom: 40px;
+            flex-wrap: wrap;
+        }
+        
+        .gallery-full-grid {
+            display: grid;
+            grid-template-columns: repeat(auto-fill, minmax(300px, 1fr));
+            gap: 20px;
+            margin-bottom: 40px;
+        }
+        
+        .gallery-item {
+            height: 300px;
+            transition: transform 0.3s ease;
+        }
+        
+        .gallery-item:hover {
+            transform: scale(1.03);
+        }
+        
+        .back-to-top {
+            display: flex;
+            justify-content: center;
+            margin-top: 50px;
+        }
+    </style>
+</head>
+<body>
+    <div class="disclaimer-banner">
+        DISCLAIMER: This is a showcase website created by shraflub and Alaeddine. Not affiliated with the actual restaurant.
+    </div>
+
+    <header>
+        <div class="container">
+            <div class="logo">
+                <a href="index.html">
+                    <img src="assets/images/logo.jpg" alt="Cosamia Snack">
+                    <span class="logo-text">COSAMIA</span>
+                    <span class="logo-subtext">SNACK</span>
+                </a>
+            </div>
+            <nav>
+                <ul class="main-nav">
+                    <li><a href="index.html">HOME</a></li>
+                    <li><a href="menu.html">MENU</a></li>
+                    <li><a href="#" class="active">GALLERY</a></li>
+                    <li><a href="index.html#contact">CONTACT</a></li>
+                    <li class="order-btn"><a href="#order">ORDER NOW</a></li>
+                </ul>
+                <div class="hamburger">
+                    <span></span>
+                    <span></span>
+                    <span></span>
+                </div>
+            </nav>
+        </div>
+    </header>
+
+    <div class="gallery-page-header">
+        <h1 class="gallery-page-title">Our Gallery</h1>
+    </div>
+
+    <div class="container gallery-container">
+        <div class="gallery-filter">
+            <button class="category-btn active" data-filter="all">All</button>
+            <button class="category-btn" data-filter="food">Food</button>
+            <button class="category-btn" data-filter="restaurant">Restaurant</button>
+            <button class="category-btn" data-filter="events">Events</button>
+        </div>
+        
+        <div class="gallery-full-grid">
+            <!-- Food -->
+            <div class="gallery-item food" style="background-image: url('assets/images/placeholder/pizza.jpg');"></div>
+            <div class="gallery-item food" style="background-image: url('assets/images/placeholder/burger.jpg');"></div>
+            <div class="gallery-item food" style="background-image: url('assets/images/placeholder/pasta.jpg');"></div>
+            <div class="gallery-item food" style="background-image: url('assets/images/placeholder/tacos.jpg');"></div>
+            <div class="gallery-item food" style="background-image: url('assets/images/placeholder/fries.jpg');"></div>
+            <div class="gallery-item food" style="background-image: url('assets/images/placeholder/dessert.jpg');"></div>
+            <div class="gallery-item food" style="background-image: url('assets/images/placeholder/drinks.jpg');"></div>
+            <div class="gallery-item food" style="background-image: url('assets/images/placeholder/pizza-veggie.jpg');"></div>
+            <div class="gallery-item food" style="background-image: url('assets/images/placeholder/burger-double.jpg');"></div>
+            <div class="gallery-item food" style="background-image: url('assets/images/placeholder/smoothie.jpg');"></div>
+            
+            <!-- Restaurant -->
+            <div class="gallery-item restaurant" style="background-image: url('assets/images/placeholder/restaurant.jpg');"></div>
+            <div class="gallery-item restaurant" style="background-image: url('assets/images/placeholder/restaurant-interior.jpg');"></div>
+            <div class="gallery-item restaurant" style="background-image: url('assets/images/placeholder/restaurant-seating.jpg');"></div>
+            <div class="gallery-item restaurant" style="background-image: url('assets/images/placeholder/restaurant-counter.jpg');"></div>
+            <div class="gallery-item restaurant" style="background-image: url('assets/images/placeholder/restaurant-kitchen.jpg');"></div>
+            <div class="gallery-item restaurant" style="background-image: url('assets/images/placeholder/restaurant-staff.jpg');"></div>
+            
+            <!-- Events -->
+            <div class="gallery-item events" style="background-image: url('assets/images/placeholder/event1.jpg');"></div>
+            <div class="gallery-item events" style="background-image: url('assets/images/placeholder/event2.jpg');"></div>
+            <div class="gallery-item events" style="background-image: url('assets/images/placeholder/event3.jpg');"></div>
+            <div class="gallery-item events" style="background-image: url('assets/images/placeholder/event4.jpg');"></div>
+        </div>
+        
+        <div class="back-to-top">
+            <a href="#" class="cta-button">Back to Top</a>
+        </div>
+    </div>
+
+    <footer>
+        <div class="container">
+            <div class="footer-content">
+                <div class="footer-logo">
+                    <img src="assets/images/logo.jpg" alt="Cosamia Snack">
+                    <div class="footer-tagline">
+                        <p>HOME OF PASTICCIO</p>
+                        <p>TU REVIENDRAS...</p>
+                    </div>
+                </div>
+                <div class="footer-links">
+                    <div class="footer-nav">
+                        <h4>Navigate</h4>
+                        <ul>
+                            <li><a href="index.html">Home</a></li>
+                            <li><a href="menu.html">Menu</a></li>
+                            <li><a href="index.html#locations">Locations</a></li>
+                            <li><a href="#">Gallery</a></li>
+                            <li><a href="index.html#contact">Contact</a></li>
+                        </ul>
+                    </div>
+                    <div class="footer-hours">
+                        <h4>Hours</h4>
+                        <p>Open Daily</p>
+                        <p>12:00 PM – 12:00 AM</p>
+                    </div>
+                </div>
+                <div class="footer-delivery">
+                    <h4>Order Online</h4>
+                    <div class="delivery-partners">
+                        <a href="#" target="_blank">Glovo</a>
+                        <a href="#" target="_blank">Jumia Food</a>
+                    </div>
+                </div>
+            </div>
+            <div class="copyright">
+                <p>&copy; 2023 Cosamia Snack. All Rights Reserved.</p>
+            </div>
+        </div>
+    </footer>
+
+    <script src="js/main.js"></script>
+    <script>
+        // Gallery filter
+        document.addEventListener('DOMContentLoaded', function() {
+            const filterButtons = document.querySelectorAll('.gallery-filter .category-btn');
+            const galleryItems = document.querySelectorAll('.gallery-item');
+            
+            filterButtons.forEach(button => {
+                button.addEventListener('click', function() {
+                    // Remove active class from all buttons
+                    filterButtons.forEach(btn => btn.classList.remove('active'));
+                    
+                    // Add active class to the clicked button
+                    this.classList.add('active');
+                    
+                    const filter = this.getAttribute('data-filter');
+                    
+                    // Show all items if 'all' filter is selected, otherwise filter
+                    galleryItems.forEach(item => {
+                        if (filter === 'all') {
+                            item.style.display = 'block';
+                        } else {
+                            if (item.classList.contains(filter)) {
+                                item.style.display = 'block';
+                            } else {
+                                item.style.display = 'none';
+                            }
+                        }
+                    });
+                });
+            });
+        });
+    </script>
+</body>
+</html> 

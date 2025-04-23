@@ -1,0 +1,285 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Cosamia Snack | Italian Taste, Moroccan Flavor</title>
+    <link rel="stylesheet" href="css/styles.css">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;500;600;700;800&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css">
+    <style>
+        .disclaimer-banner {
+            background-color: #e91e1e;
+            color: white;
+            text-align: center;
+            padding: 10px 15px;
+            font-weight: 500;
+            position: fixed;
+            top: 0;
+            left: 0;
+            right: 0;
+            z-index: 1000;
+            box-shadow: 0 2px 5px rgba(0,0,0,0.2);
+        }
+        .disclaimer-banner a {
+            color: white;
+            text-decoration: underline;
+        }
+        header {
+            margin-top: 40px;
+        }
+        @media screen and (max-width: 768px) {
+            .disclaimer-banner {
+                font-size: 14px;
+                padding: 8px 10px;
+            }
+            header {
+                margin-top: 36px;
+            }
+        }
+    </style>
+</head>
+<body>
+    <div class="disclaimer-banner">
+        DISCLAIMER: This is a showcase website created by shraflub and Alaeddine. Not affiliated with the actual restaurant.
+    </div>
+    
+    <header>
+        <div class="container">
+            <div class="logo">
+                <a href="index.html">
+                    <img src="assets/images/logo.jpg" alt="Cosamia Snack">
+                    <span class="logo-text">COSAMIA</span>
+                    <span class="logo-subtext">SNACK</span>
+                </a>
+            </div>
+            <nav>
+                <ul class="main-nav">
+                    <li><a href="#menu">MENU</a></li>
+                    <li><a href="#gallery">GALLERY</a></li>
+                    <li><a href="#contact">CONTACT</a></li>
+                    <li class="order-btn"><a href="#order">ORDER NOW</a></li>
+                </ul>
+                <div class="hamburger">
+                    <span></span>
+                    <span></span>
+                    <span></span>
+                </div>
+            </nav>
+        </div>
+    </header>
+
+    <section class="hero">
+        <div class="hero-content">
+            <div class="food-collage">
+                <div class="food-item pizza"></div>
+                <div class="food-item burger"></div>
+                <div class="food-item pasta"></div>
+                <div class="food-item fries"></div>
+                <div class="food-item tacos"></div>
+            </div>
+            <div class="hero-text">
+                <h1>ITALIAN TASTE,<br>MOROCCAN FLAVOR</h1>
+                <a href="#menu" class="cta-button">VIEW MENU</a>
+            </div>
+        </div>
+    </section>
+
+    <section id="menu" class="menu-section">
+        <div class="container">
+            <h2 class="section-title">OUR MENU</h2>
+            <div class="menu-categories">
+                <div class="category-nav">
+                    <button class="category-btn active" data-category="all">All</button>
+                    <button class="category-btn" data-category="pizza">Pizza</button>
+                    <button class="category-btn" data-category="burgers">Burgers</button>
+                    <button class="category-btn" data-category="pasta">Pasta</button>
+                    <button class="category-btn" data-category="tacos">Tacos</button>
+                    <button class="category-btn" data-category="sides">Sides</button>
+                </div>
+                
+                <div class="menu-items">
+                    <!-- Pizza Items -->
+                    <div class="menu-item pizza">
+                        <div class="item-image" style="background-image: url('assets/images/placeholder/pizza-margherita.jpg');"></div>
+                        <div class="item-info">
+                            <h3>Margherita</h3>
+                            <p>Classic tomato sauce, fresh mozzarella, basil</p>
+                            <span class="price">85 MAD</span>
+                        </div>
+                    </div>
+                    
+                    <!-- Burger Items -->
+                    <div class="menu-item burgers">
+                        <div class="item-image" style="background-image: url('assets/images/placeholder/cheeseburger.jpg');"></div>
+                        <div class="item-info">
+                            <h3>Classic Cheeseburger</h3>
+                            <p>Beef patty, cheddar cheese, lettuce, tomato, special sauce</p>
+                            <span class="price">75 MAD</span>
+                        </div>
+                    </div>
+                    
+                    <!-- Pasta Items -->
+                    <div class="menu-item pasta">
+                        <div class="item-image" style="background-image: url('assets/images/placeholder/pasta.jpg');"></div>
+                        <div class="item-info">
+                            <h3>Signature Pasticcio</h3>
+                            <p>Baked pasta with béchamel sauce and Italian herbs</p>
+                            <span class="price">65 MAD</span>
+                        </div>
+                    </div>
+                    
+                    <!-- Tacos Items -->
+                    <div class="menu-item tacos">
+                        <div class="item-image" style="background-image: url('assets/images/placeholder/tacos.jpg');"></div>
+                        <div class="item-info">
+                            <h3>Chicken Tacos</h3>
+                            <p>Seasoned chicken, fresh salsa, cheese sauce</p>
+                            <span class="price">70 MAD</span>
+                        </div>
+                    </div>
+                    
+                    <!-- Sides Items -->
+                    <div class="menu-item sides">
+                        <div class="item-image" style="background-image: url('assets/images/placeholder/fries.jpg');"></div>
+                        <div class="item-info">
+                            <h3>Golden Fries</h3>
+                            <p>Crispy potato fries with our special seasoning</p>
+                            <span class="price">25 MAD</span>
+                        </div>
+                    </div>
+                </div>
+                
+                <a href="menu.html" class="see-more-btn">See Full Menu</a>
+            </div>
+        </div>
+    </section>
+
+    <section id="locations" class="locations-section">
+        <div class="container">
+            <h2 class="section-title">OUR LOCATIONS</h2>
+            <div class="locations-container">
+                <div class="location-map">
+                    <div class="map-placeholder">
+                        <i class="fas fa-map-marker-alt"></i>
+                    </div>
+                </div>
+                
+                <div class="location-info">
+                    <h3>Morocco</h3>
+                    <p class="phone">+212 524-123456</p>
+                    <div class="hours">
+                        <p>OPEN DAILY</p>
+                        <p>12:00 PM – 12:00 AM</p>
+                    </div>
+                    <a href="https://maps.google.com" target="_blank" class="directions-btn">Get Directions</a>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <section id="gallery" class="gallery-section">
+        <div class="container">
+            <h2 class="section-title">GALLERY</h2>
+            <div class="gallery-grid">
+                <div class="gallery-item" style="background-image: url('assets/images/placeholder/pizza.jpg');"></div>
+                <div class="gallery-item" style="background-image: url('assets/images/placeholder/pasta.jpg');"></div>
+                <div class="gallery-item" style="background-image: url('assets/images/placeholder/burger.jpg');"></div>
+                <div class="gallery-item" style="background-image: url('assets/images/placeholder/tacos.jpg');"></div>
+                <div class="gallery-item" style="background-image: url('assets/images/placeholder/restaurant.jpg');"></div>
+                <div class="gallery-item" style="background-image: url('assets/images/placeholder/drinks.jpg');"></div>
+            </div>
+            <a href="gallery.html" class="see-more-btn">See More</a>
+        </div>
+    </section>
+
+    <section id="contact" class="contact-section">
+        <div class="container">
+            <h2 class="section-title">CONTACT US</h2>
+            <div class="contact-content">
+                <div class="contact-form">
+                    <form>
+                        <div class="form-group">
+                            <input type="text" placeholder="Name" required>
+                        </div>
+                        <div class="form-group">
+                            <input type="email" placeholder="Email" required>
+                        </div>
+                        <div class="form-group">
+                            <input type="tel" placeholder="Phone">
+                        </div>
+                        <div class="form-group">
+                            <textarea placeholder="Message" required></textarea>
+                        </div>
+                        <button type="submit" class="submit-btn">Send Message</button>
+                    </form>
+                </div>
+                <div class="contact-info">
+                    <div class="info-item">
+                        <i class="fas fa-phone"></i>
+                        <p>+212 123456789</p>
+                    </div>
+                    <div class="info-item">
+                        <i class="fas fa-envelope"></i>
+                        <p>info@cosamia.ma</p>
+                    </div>
+                    <div class="info-item">
+                        <i class="fas fa-map-marker-alt"></i>
+                        <p>Morocco</p>
+                    </div>
+                    <div class="social-media">
+                        <a href="#" target="_blank"><i class="fab fa-instagram"></i></a>
+                        <a href="#" target="_blank"><i class="fab fa-facebook"></i></a>
+                        <a href="#" target="_blank"><i class="fab fa-tiktok"></i></a>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <footer>
+        <div class="container">
+            <div class="footer-content">
+                <div class="footer-logo">
+                    <img src="assets/images/logo.jpg" alt="Cosamia Snack">
+                    <div class="footer-tagline">
+                        <p>HOME OF PASTICCIO</p>
+                        <p>TU REVIENDRAS...</p>
+                    </div>
+                </div>
+                <div class="footer-links">
+                    <div class="footer-nav">
+                        <h4>Navigate</h4>
+                        <ul>
+                            <li><a href="index.html">Home</a></li>
+                            <li><a href="#menu">Menu</a></li>
+                            <li><a href="#locations">Locations</a></li>
+                            <li><a href="#gallery">Gallery</a></li>
+                            <li><a href="#contact">Contact</a></li>
+                        </ul>
+                    </div>
+                    <div class="footer-hours">
+                        <h4>Hours</h4>
+                        <p>Open Daily</p>
+                        <p>12:00 PM – 12:00 AM</p>
+                    </div>
+                </div>
+                <div class="footer-delivery">
+                    <h4>Order Online</h4>
+                    <div class="delivery-partners">
+                        <a href="#" target="_blank">Glovo</a>
+                        <a href="#" target="_blank">Jumia Food</a>
+                    </div>
+                </div>
+            </div>
+            <div class="copyright">
+                <p>&copy; 2025 Cosamia Snack. All Rights Reserved.</p>
+            </div>
+        </div>
+    </footer>
+
+    <script src="js/main.js"></script>
+</body>
+</html> 
